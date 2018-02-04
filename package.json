@@ -1,0 +1,24 @@
+{
+  "name": "koa-learn",
+  "version": "1.0.0",
+  "description": "a project for practice",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZirkleTsing/koa-learn.git"
+  },
+  "author": "835702580@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZirkleTsing/koa-learn/issues"
+  },
+  "homepage": "https://github.com/ZirkleTsing/koa-learn#readme",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "nodemon": "^1.14.12"
+  }
+}
