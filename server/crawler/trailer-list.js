@@ -1,11 +1,12 @@
 const puppeteer = require('puppeteer')
 
 const url = `https://movie.douban.com/tag/#/?sort=T&range=7,10&tags=`
+
 const sleep = time => new Promise(resolve => {
   setTimeout(resolve, time)
 })
 
-async function demo() {
+;(async () => {
   console.log('开始爬取豆瓣电影信息')
 
   const browser = await puppeteer.launch({
@@ -54,6 +55,4 @@ async function demo() {
   await browser.close()
   process.send({result})
   process.exit(0)
-}
-
-demo()
+})()
