@@ -14,14 +14,14 @@ const path = require('path')
   child.on('exit', code => {
     if (invoked) return
 
-    invoked = false
+    invoked = true
     let err = code === 0 ? null : new Error('exit code: ' + code)
     console.log(err)
   })
 
   child.on('message', data => {
     let result = data.result
-    
+
     console.log(result)
   })
 })()
